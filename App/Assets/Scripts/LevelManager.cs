@@ -4,18 +4,24 @@ using System.Collections;
 
 public class LevelManager : MonoBehaviour {
 
-	public float loadNextLevelAfter = 2.5f;
+	private float loadNextLevelAfter = 2.5f;
 	
 	void Start () {
 		if(SceneManager.GetActiveScene().buildIndex == 0) {
 			Invoke ("LoadNextLevel", loadNextLevelAfter);
-		} else if(loadNextLevelAfter <= 0f) {
-			Debug.Log("Use positive number on Load Next Level After!");
 		}
 	}
-	
-	public void LoadLevel(string name) {
+
+    //Carrega década a ser mostrada
+    public void LoadDecade(string name)
+    {
         SceneManager.LoadScene(name);
+    }
+	
+    //Carrega fase para desenvolvimento
+	public void LoadLevel(int id) {
+        // TODO: buscar valores de entrada, saida, problema, variáveis e comandos iniciais
+        SceneManager.LoadScene("90 Game");
 	}
 	
 	public void QuitRequest() {
