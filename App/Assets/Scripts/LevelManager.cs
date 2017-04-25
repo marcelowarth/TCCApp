@@ -19,9 +19,9 @@ public class LevelManager : MonoBehaviour {
     }
 	
     //Carrega fase para desenvolvimento
-	public void LoadLevel(int id) {
+	public void LoadLevel(string name) {
         // TODO: buscar valores de entrada, saida, problema, variáveis e comandos iniciais
-        SceneManager.LoadScene("90 Game");
+        SceneManager.LoadScene(name);
 	}
 	
 	public void QuitRequest() {

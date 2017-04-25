@@ -7,7 +7,7 @@ public class Game
 {
     public static Game current;
     public string nome;
-    public Dictionary<int, string> solucoes = new Dictionary<int, string>; 
+    public Dictionary<int, string> solucoes = new Dictionary<int, string>();
 
     public Game()
     {
