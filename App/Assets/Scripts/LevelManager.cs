@@ -6,11 +6,11 @@ public class LevelManager : MonoBehaviour {
 
 	private float loadNextLevelAfter = 2.5f;
 	
-	void Start () {
+	/*void Start () {
 		if(SceneManager.GetActiveScene().buildIndex == 0) {
 			Invoke ("LoadNextLevel", loadNextLevelAfter);
 		}
-	}
+	}*/
 
     //Carrega década a ser mostrada
     public void LoadDecade(string name)
@@ -18,13 +18,18 @@ public class LevelManager : MonoBehaviour {
         SceneManager.LoadScene(name);
     }
 	
-    //Carrega fase para desenvolvimento
 	public void LoadLevel(string name) {
-        // TODO: buscar valores de entrada, saida, problema, variáveis e comandos iniciais
         SceneManager.LoadScene(name);
 	}
-	
-	public void QuitRequest() {
+
+    //Carrega fase para desenvolvimento
+    public void LoadLevelWithInfo(string name)
+    {
+        // TODO: buscar valores de entrada, saida, problema, variáveis e comandos iniciais
+        SceneManager.LoadScene(name);
+    }
+
+    public void QuitRequest() {
 		Application.Quit();
 	}
 	
