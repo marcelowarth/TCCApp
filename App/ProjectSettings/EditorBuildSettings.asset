@@ -5,21 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/_Scenes/01_Start.unity
-    guid: 994153d97266f7342865752d07f9aefd
   - enabled: 1
     path: Assets/_Scenes/10_TypeSelection.unity
     guid: 326aa539a07e969489a1eb756dff1abb
   - enabled: 1
     path: Assets/_Scenes/11_ComputerHistorySelection.unity
     guid: 749e5ce6e20202545b57e708c295f1b4
-  - enabled: 0
-    path: Assets/_Scenes/12_ChallengesSelection.unity
-    guid: 4b53a0a2ce742c6459d6ad56a471d3fe
-  - enabled: 0
-    path: Assets/_Scenes/13_CustomSelection.unity
-    guid: 4549927ae5fa1b147b6375c9d84366a4
   - enabled: 1
     path: Assets/_Scenes/20_Decada1940.unity
     guid: 19bba50d307054247b47df66d9877b2f
@@ -42,5 +33,50 @@ EditorBuildSettings:
     path: Assets/_Scenes/20_Decada2000.unity
     guid: b4daf7dbbf02f2c41b4d4155357a34f2
   - enabled: 1
-    path: Assets/_Scenes/90_Game.unity
+    path: Assets/_Scenes/LevelSelection.unity
+    guid: e4db9a722cc9ec6419e317f258d8efed
+  - enabled: 1
+    path: Assets/_Scenes/Levels/90_Game.unity
     guid: 384aae7513d5684469920c8c259aa374
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio01.unity
+    guid: b77233df1cc2e9143a04341beaad4fc4
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio02.unity
+    guid: 5308649d745a3b549bf6c8d1d2fbeaa3
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio03.unity
+    guid: 96a2fd7f6d3d58d43b0c8612bf84ca5f
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio04.unity
+    guid: dd4360cffd0106c468d4f031bc2a916e
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio05.unity
+    guid: 4a284fb1fc410304da0d24f707aec72c
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio06.unity
+    guid: 51857e52bb0822f419941fcc808ac6e8
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio07.unity
+    guid: 82585be6981eecd4badf14c2742a04f7
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio08.unity
+    guid: ac74da2d71a6a5c41bf6914e639e9096
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio09.unity
+    guid: f638f10c158405b4b9142de0cadf3f87
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio10.unity
+    guid: 31af6b803ca180c4f8c65a33765087ce
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio11.unity
+    guid: 28baa7ca1cf99bc4b96b67bc3e5d95a2
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio12.unity
+    guid: 2bba2aec81c364b45a13d7747f0be8e9
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio13.unity
+    guid: bd0156fce777f5a4186e89675e3778c3
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Desafio14.unity
+    guid: 26e45d30eeab95245849b04426bb59df

@@ -34,21 +34,22 @@ public class Worker : MonoBehaviour
 
     void UpdateAnimator()
     {
-        if(agent.pathPending)
+        if (carryingHardware)
         {
-            anim.SetBool("walkingNormal", true);
-        } else
-        {
-            anim.SetBool("walkingNormal", false);
-        }
-
-        if(carryingHardware)
-        {
-            anim.SetBool("walkingHolding", true);
+            anim.SetBool("bIsCarryingHardware", true);
         }
         else
         {
-            anim.SetBool("walkingHolding", false);
+            anim.SetBool("bIsCarryingHardware", false);
+        }
+        anim.SetFloat("Speed", Vector3.Distance(Vector3.zero, agent.velocity));
+        if(agent.velocity.x > 0f)
+        {
+            sprite.flipX = true;
+        }
+        else
+        {
+            sprite.flipX = false;
         }
     }
 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TaskBase : MonoBehaviour
 {
+    public enum TaskType { PegarEntrada, LevarSaida, PularPara, CopiarPara, CopiarDe, SeZero, SeNegativo, Aumente, Diminua, SomarCom, DiminuirCom, Dummy}
+    public TaskType myType;
     public bool bCountAsTask = true;
     public TaskManager taskManager;
     public bool bIsAtTaskArea;

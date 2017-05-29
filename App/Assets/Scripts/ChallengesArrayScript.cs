@@ -166,7 +166,7 @@ public class ChallengesArrayScript : MonoBehaviour {
         cleanChallenge();
         #endregion
 
-        #region Challenge 6
+        #region Challenge 6 Tutorial
         chal.description = "Para cada duas entradas, subtraia a primeira da segunda e leve o resultado para a saída, após, subtraia a segunda da primeira e leve a saída.";
 
         chal.inputVar[0] = "5";

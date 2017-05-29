@@ -71,10 +71,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_FontSize: 60
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 6
     m_MaxSize: 67
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
+  m_Text: 'a
 
 '
 --- !u!114 &114278343994163130
@@ -163,8 +163,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -195,8 +195,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0db7842e4472b14caf18e496d060c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myType: 0
+  bCountAsTask: 0
   taskManager: {fileID: 0}
   bIsAtTaskArea: 0
+  indexText: {fileID: 114084613721709256}
 --- !u!222 &222214332329034410
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -243,7 +246,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 189.25, y: 58.499985}
+  m_AnchoredPosition: {x: 279, y: 184.08}
   m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &225985374150014788

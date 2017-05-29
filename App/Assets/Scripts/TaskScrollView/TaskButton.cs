@@ -24,7 +24,25 @@ public class TaskButton : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     private void Update()
     {
-        if(taskManager.managerState == TaskManager.ManagerState.SelectingSlot)
+        if (bIsSpawner)
+        {
+            switch (taskManager.executionState)
+            {
+                case TaskManager.ExecutionState.None:
+                    button.interactable = true;
+                    break;
+                case TaskManager.ExecutionState.Processing:
+                    button.interactable = false;
+                    break;
+                case TaskManager.ExecutionState.Stopped:
+                    button.interactable = false;
+                    break;
+                case TaskManager.ExecutionState.Completed:
+                    button.interactable = false;
+                    break;
+            }
+        }        
+        if (taskManager.managerState == TaskManager.ManagerState.SelectingSlot)
         {
             button.interactable = false;
         }

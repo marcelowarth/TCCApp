@@ -282,8 +282,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -335,7 +335,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Copiar para
+  m_Text: Copiar de
 --- !u!114 &114708169764593940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,10 +347,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef34be1ef416db7439a7d3e1aa3cbfc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myType: 4
+  bCountAsTask: 1
   taskManager: {fileID: 0}
   bIsAtTaskArea: 0
-  slotButton: {fileID: 0}
-  slotText: {fileID: 0}
+  slotButton: {fileID: 114326652237385320}
+  slotText: {fileID: 114087506449459190}
   slotIndex: 0
 --- !u!114 &114810459117311628
 MonoBehaviour:
@@ -444,7 +446,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150.00003, y: -279.99985}
+  m_AnchoredPosition: {x: 150.00003, y: -360}
   m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224312646573699860

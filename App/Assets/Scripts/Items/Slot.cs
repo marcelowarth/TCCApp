@@ -29,7 +29,15 @@ public class Slot : MonoBehaviour, IPointerClickHandler
         }
         hardware = Instantiate(_hardware, hardwareSlot);
     }
-
+    public void SetHardwareToSlot(GameObject _hardware)
+    {
+        if (hardware)
+        {
+            Destroy(hardware);
+        }
+        hardware = Instantiate(_hardware, hardwareSlot);
+        Destroy(_hardware);
+    }
     public void OnPointerClick(PointerEventData eventData)
     {
         if(taskManager.managerState == TaskManager.ManagerState.SelectingSlot)

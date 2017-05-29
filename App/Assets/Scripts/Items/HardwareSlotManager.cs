@@ -49,7 +49,7 @@ public class HardwareSlotManager : MonoBehaviour
                 {
                     GameObject hardware = Instantiate(prefabHardware);
                     hardware.GetComponent<Hardware>().hardwareValue = hardwaresToSpawn[j].hardwareValue;
-                    slots[i].CopyHardwareToSlot(hardware);
+                    slots[i].SetHardwareToSlot(hardware);
                 }
             }
         }
