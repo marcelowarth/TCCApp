@@ -41,9 +41,10 @@ GameObject:
   - component: {fileID: 114653977342903518}
   - component: {fileID: 114334915793648586}
   - component: {fileID: 114278343994163130}
+  - component: {fileID: 225985374150014788}
   m_Layer: 5
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: TaskArea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,6 +93,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4294c45cb26f2fa41b20bbb2cf71d4da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 0
+  bIsSpawner: 0
 --- !u!114 &114334915793648586
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -227,3 +230,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 358, y: 117}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225985374150014788
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1689015904220658}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

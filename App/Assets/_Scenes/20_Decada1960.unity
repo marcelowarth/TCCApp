@@ -115,6 +115,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114510023335574040, guid: 71f2a9fd0067e6d49981690e201bf86e,
+        type: 2}
+      propertyPath: backgroundImages.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 224571922868890680, guid: 71f2a9fd0067e6d49981690e201bf86e,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -210,6 +215,30 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 20_Decada1970
       objectReference: {fileID: 0}
+    - target: {fileID: 114510023335574040, guid: 71f2a9fd0067e6d49981690e201bf86e,
+        type: 2}
+      propertyPath: backgroundImages.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6a307ad953256cb42aaad183e5d0e451,
+        type: 3}
+    - target: {fileID: 114510023335574040, guid: 71f2a9fd0067e6d49981690e201bf86e,
+        type: 2}
+      propertyPath: backgroundImages.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 41bf807fb4fc679458bc18af7330c44a,
+        type: 3}
+    - target: {fileID: 114510023335574040, guid: 71f2a9fd0067e6d49981690e201bf86e,
+        type: 2}
+      propertyPath: backgroundImages.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: c4216c15cd616954ea55261134af0e43,
+        type: 3}
+    - target: {fileID: 114510023335574040, guid: 71f2a9fd0067e6d49981690e201bf86e,
+        type: 2}
+      propertyPath: backgroundImages.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: af80d11fcdda7a64c9761e53124e0fff,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 71f2a9fd0067e6d49981690e201bf86e, type: 2}
   m_IsPrefabParent: 0

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 264e4dc9349b6fa4d82a5f34c92c9466
+timeCreated: 1495827650
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - prefabArrowTip: {fileID: 1684135208087730, guid: 2519ab3ddf241d94ca0ff9d9ed4e9e3f,
+      type: 2}
+  - prefabArrowBody: {fileID: 1889477120300242, guid: 705e009c9b4e18d43a15b67e791187b6,
+      type: 2}
+  - prefabArrowOrigin: {fileID: 1700103651755608, guid: d1cb47b174b205e49b163517ef589aa5,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

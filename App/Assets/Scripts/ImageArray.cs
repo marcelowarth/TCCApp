@@ -16,6 +16,7 @@ public class ImageArray : MonoBehaviour {
     public GameObject menuButton;
     public GameObject nextDecadeButton;
     public GameObject menuButtonRight;
+    public bool isLastDecade;
 
     void Start()
     {
@@ -50,6 +51,11 @@ public class ImageArray : MonoBehaviour {
         {
             nextButton.SetActive(true);
             menuButton.SetActive(true);
+        }
+
+        if(isLastDecade)
+        {
+            nextDecadeButton.SetActive(false);
         }
     }
 

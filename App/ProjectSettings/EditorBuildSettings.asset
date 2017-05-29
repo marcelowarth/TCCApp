@@ -6,30 +6,41 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/_Scenes/00 Splash.unity
+    path: Assets/_Scenes/01_Start.unity
+    guid: 994153d97266f7342865752d07f9aefd
   - enabled: 1
-    path: Assets/_Scenes/01 Start.unity
+    path: Assets/_Scenes/10_TypeSelection.unity
+    guid: 326aa539a07e969489a1eb756dff1abb
   - enabled: 1
-    path: Assets/_Scenes/10 TypeSelection.unity
+    path: Assets/_Scenes/11_ComputerHistorySelection.unity
+    guid: 749e5ce6e20202545b57e708c295f1b4
+  - enabled: 0
+    path: Assets/_Scenes/12_ChallengesSelection.unity
+    guid: 4b53a0a2ce742c6459d6ad56a471d3fe
+  - enabled: 0
+    path: Assets/_Scenes/13_CustomSelection.unity
+    guid: 4549927ae5fa1b147b6375c9d84366a4
   - enabled: 1
-    path: Assets/_Scenes/11 ComputerHistorySelection.unity
+    path: Assets/_Scenes/20_Decada1940.unity
+    guid: 19bba50d307054247b47df66d9877b2f
   - enabled: 1
-    path: Assets/_Scenes/12 ChallengesSelection.unity
+    path: Assets/_Scenes/20_Decada1950.unity
+    guid: f416f5ba6f6745b46882970c2398d2d2
   - enabled: 1
-    path: Assets/_Scenes/13 CustomSelection.unity
+    path: Assets/_Scenes/20_Decada1960.unity
+    guid: 7732fe1bc0e9c52439acf6fa6a080064
   - enabled: 1
-    path: Assets/_Scenes/20 Decada1940.unity
+    path: Assets/_Scenes/20_Decada1970.unity
+    guid: befc7dfe745351148b8f5185b17ffda5
   - enabled: 1
-    path: Assets/_Scenes/20 Decada1950.unity
+    path: Assets/_Scenes/20_Decada1980.unity
+    guid: a645893230208f64f846f03263cc627a
   - enabled: 1
-    path: Assets/_Scenes/20 Decada1960.unity
+    path: Assets/_Scenes/20_Decada1990.unity
+    guid: 011f3600b7e2cf340b4ad72ba7eb2c7e
   - enabled: 1
-    path: Assets/_Scenes/20 Decada1970.unity
+    path: Assets/_Scenes/20_Decada2000.unity
+    guid: b4daf7dbbf02f2c41b4d4155357a34f2
   - enabled: 1
-    path: Assets/_Scenes/20 Decada1980.unity
-  - enabled: 1
-    path: Assets/_Scenes/20 Decada1990.unity
-  - enabled: 1
-    path: Assets/_Scenes/20 Decada2000.unity
-  - enabled: 1
-    path: Assets/_Scenes/90 Game.unity
+    path: Assets/_Scenes/90_Game.unity
+    guid: 384aae7513d5684469920c8c259aa374
