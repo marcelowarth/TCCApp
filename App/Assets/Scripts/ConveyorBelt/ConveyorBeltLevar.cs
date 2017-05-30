@@ -22,7 +22,7 @@ public class ConveyorBeltLevar : ConveyorBelt
         {
             int X = hardwareToReceive[hardwareOnConveyor.Count];
             int Y = hardware.GetComponent<Hardware>().hardwareValue;
-            Speaker.Inst.SetMessageAndColor("ERRADO! Era esperado " + X +", mas colocaste " + Y + "!", Speaker.MessageType.Error);
+            Speaker.Inst.SetMessageAndColor("Pense Novamente! Era esperado " + X +", mas colocaste " + Y + "!", Speaker.MessageType.Error);
         }
     }
     public void ResetConveyor()

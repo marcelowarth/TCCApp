@@ -1424,7 +1424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   challengeDescription: "Para cada duas entradas, subtraia a primeira da segunda e
     leve o resultado para a sa\xEDda, ap\xF3s, subtraia a segunda da primeira e leve
-    a sa\xEDda."
+    a sa\xEDda. Exemplo: Valores da entrada, 5 e 3, valores esperados na sa\xEDda,
+    -2 e 2."
   descriptionBox: {fileID: 2120861595}
   lightning: {fileID: 1112478355}
   taskManager: {fileID: 1066033436}
