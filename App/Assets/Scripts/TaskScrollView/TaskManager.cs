@@ -126,6 +126,7 @@ public class TaskManager : MonoBehaviour
         }
         else if (currentTaskIndex >= allTasks.Length)
         {
+            Speaker.Inst.SetMessageAndColor("Não completou o objetivo! Tente utilizar outras tarefas", Speaker.MessageType.Error);
             executionState = ExecutionState.Completed;
             StopAllActivities();            
         }        

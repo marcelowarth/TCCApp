@@ -14,7 +14,11 @@ public class TaskPularIfZero : TaskPularFrom
     }
     public override void ExecuteTask()
     {
-        if (taskManager.worker.GetCarryingHardware())
+        if (jumpTo.GetSiblingIndex() == transform.GetSiblingIndex() - 1)
+        {
+            Speaker.Inst.SetMessageAndColor("Você criou um loop infinito, reorganize seus comandos.", Speaker.MessageType.Error);
+        }
+        else if (taskManager.worker.GetCarryingHardware())
         {
             if(taskManager.worker.GetCarryingHardware().hardwareValue == 0)
             {

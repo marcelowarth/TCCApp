@@ -12,8 +12,16 @@ public class Speaker : MonoBehaviour
     public GameObject descriptionBox;
     public GameObject lightning;
     public TaskManager taskManager;
+    public Button closeBtn;
+    public Button leftBtn;
+    public Button rightBtn;
+    public Toggle solutionBtn;
+    public GameObject solutionScroll;
+    [Header("Descricoes por pagina")]
+    public string[] descriptions;
     private Animator anim;
     private bool bCanHideMessage = true;
+    private int currentDescriptions;
 
     private void Awake()
     {
@@ -22,15 +30,18 @@ public class Speaker : MonoBehaviour
     void Start ()
     {
         anim = GetComponent<Animator>();
-        SetMessageAndColor(challengeDescription, MessageType.Description);
-    }	
-	void Update ()
+        SetMessageAndColor(descriptions[0], MessageType.Description);
+        solutionScroll.SetActive(false);
+    }
+    void Update ()
     {
         if (descriptionBox.activeSelf)
         {
+            currentDescriptions = Mathf.Clamp(currentDescriptions, 0, descriptions.Length - 1);
+            UpdateButtonsVisibility();
             if (Input.GetMouseButtonDown(0) && bCanHideMessage)
             {
-                descriptionBox.SetActive(false);
+                //descriptionBox.SetActive(false);
             }
         }
 	}
@@ -50,11 +61,49 @@ public class Speaker : MonoBehaviour
             case MessageType.Winner:
                 bCanHideMessage = false;
                 break;
-        }
-            
+        }            
     }
     public void ResetSpeaker()
     {
         SetMessageAndColor(challengeDescription, MessageType.Description);
+    }
+
+    public void UpdateButtonsVisibility()
+    {
+        if (bCanHideMessage)
+        {
+            closeBtn.gameObject.SetActive(true);
+            if (currentDescriptions == 0)
+            {
+                leftBtn.gameObject.SetActive(false);
+            }
+            else
+            {
+                leftBtn.gameObject.SetActive(true);
+            }
+            if (currentDescriptions == descriptions.Length - 1)
+            {
+                rightBtn.gameObject.SetActive(false);
+                solutionBtn.gameObject.SetActive(true);
+            }
+            else
+            {
+                solutionScroll.gameObject.SetActive(false);
+                solutionBtn.isOn = false;
+                solutionBtn.gameObject.SetActive(false);
+                rightBtn.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            closeBtn.gameObject.SetActive(false);
+            leftBtn.gameObject.SetActive(false);
+            rightBtn.gameObject.SetActive(false);
+        }
+    }
+    public void ShowNextDescription(int value)
+    {
+        currentDescriptions += value;
+        SetMessageAndColor(descriptions[currentDescriptions], MessageType.Description);
     }
 }

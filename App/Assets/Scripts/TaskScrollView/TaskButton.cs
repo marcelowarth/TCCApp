@@ -14,7 +14,7 @@ public class TaskButton : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     private TaskManager                                                 taskManager;
     private Vector2                                                     offset;
     private Button                                                      button;
-
+    private bool bInteractable = true;
     void Start()
     {
         button = GetComponent<Button>();
@@ -42,7 +42,7 @@ public class TaskButton : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
                     break;
             }
         }        
-        if (taskManager.managerState == TaskManager.ManagerState.SelectingSlot)
+        else if (taskManager.managerState == TaskManager.ManagerState.SelectingSlot)
         {
             button.interactable = false;
         }
@@ -54,7 +54,7 @@ public class TaskButton : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if(!button.interactable)
+        if(!button.interactable || taskManager.executionState != TaskManager.ExecutionState.None)
         {
             return;
         }
@@ -70,7 +70,7 @@ public class TaskButton : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (!button.interactable)
+        if (!button.interactable || taskManager.executionState != TaskManager.ExecutionState.None)
         {
             return;
         }
@@ -79,7 +79,7 @@ public class TaskButton : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (!button.interactable)
+        if (!button.interactable || taskManager.executionState != TaskManager.ExecutionState.None)
         {
             return;
         }

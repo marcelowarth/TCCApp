@@ -37,8 +37,16 @@ public class TaskPularFrom : TaskBase
     }
 
     public override void ExecuteTask()
-    {        
-        taskManager.ExecuteTask(jumpTo.GetSiblingIndex());
+    {
+        if(jumpTo.GetSiblingIndex() == transform.GetSiblingIndex() - 1)
+        {
+            Speaker.Inst.SetMessageAndColor("Você criou um loop infinito, reorganize seus comandos.", Speaker.MessageType.Error);
+        }
+        else
+        {
+            taskManager.ExecuteTask(jumpTo.GetSiblingIndex());
+        }
+        
     }
 
     public virtual void OnDestroy()
